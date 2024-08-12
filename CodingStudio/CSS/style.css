@@ -1,0 +1,17 @@
+* {
+    font-family: "Montserrat";
+}
+
+body
+
+h1 {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+a {
+    /* Untuk menjadikan tulisan tidak berdekorasi apapun dari default underline */
+    text-decoration: none;
+    /* Mengubah warna font dari default biru */
+    color: black !important;
+}

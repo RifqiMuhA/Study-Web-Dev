@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar HTML</title>
+</head>
+<style>
+    *{
+        /* Agar scroll ke link id tertentu smooth */
+        scroll-behavior: smooth;
+    }
+</style>
+<body>
+    <!-- Heading dan Paragraf -->
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+    <!-- Auto Enter, Memakan Satu Baris -->
+    <p>Ini adalah Paragraf</p>
+    <br> <!-- enter dalam web -->
+
+    <h1>===================================</h1>
+    <h1>PENGGUNAAN TEXT FORMATTING</h1>
+    <!-- Text Formatting-->
+    <!-- Selain tag p, maka tidak akan membuat line baru -->
+    <b>CONTOH BOLD</b>
+    <p>Buku saya berukuran <b>tebal</b></p>
+
+    <i>CONTOH ITALIC</i>
+    <p>Buku saya berbahasa <i>English</i></p>
+
+    <u>CONTOH UNDELINE</u>
+    <p>Buku saya berisi <u>ilmu</u></p>
+
+    <p>Lengkapnya :
+        <u>undelined</u>
+        <i>italic</i>
+        <b>bold</b>
+    </p>
+
+    <p>5<sup>2</sup> = 25</p>
+    <p>H<sub>2</sub>O</p>
+    <p>CO<sup>2</sup></p>
+    <br>
+
+    <h1>===================================</h1>
+    <h1>LIST</h1>
+    <p>Ordered List</p>
+    <!-- Ordered List -->
+    <ol> 
+        <li>Aku</li>
+        <li>Kamu</li>
+        <li>Dia</li>
+        <li>Mereka</li>
+    </ol>
+    <ol type="i"> 
+        <li>Aku</li>
+        <li>Kamu</li>
+        <li>Dia</li>
+        <li>Mereka</li>
+    </ol>
+    <ol type="A"> 
+        <li>Aku</li>
+        <li>Kamu</li>
+        <li>Dia</li>
+        <li>Mereka</li>
+    </ol>
+    <!-- Unoredered List -->
+    <p>Unoredered List</p>
+    <ul>
+        <li>Aku</li>
+        <li>Kamu</li>
+        <li>Dia</li>
+        <li>Mereka</li>
+    </ul>
+    <!-- Ini adalah default -->
+    <ul type="disc"> 
+        <li>Aku</li>
+        <li>Kamu</li>
+        <li>Dia</li>
+        <li>Mereka</li>
+    </ul>
+    <ul type="square">
+        <li>Aku</li>
+        <li>Kamu</li>
+        <li>Dia</li>
+        <li>Mereka</li>
+    </ul>
+    <ul type="none">
+        <li>Aku</li>
+        <li>Kamu</li>
+        <li>Dia</li>
+        <li>Mereka</li>
+    </ul>
+    <br>
+    
+    <h1>===================================</h1>
+    <h1>ANCHOR / LINK</h1>
+    <p>
+        <a href="https://www.google.com/">Google (target : default)</a>
+    </p>
+    <!-- Membuka di page baru -->
+    <p>
+        <a href="https://www.google.com/" target="_blank">Google (target : _blank)</a>
+    </p>
+    
+    <h1>===================================</h1>
+    <h1>IMAGE</h1>
+    <img src="https://images.unsplash.com/photo-1719937206300-fc0dac6f8cac?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Gambar Laptop">
+    <img src="vbg dn.png" alt="vbg" width="700" height="350">
+    <!-- image sebagai link -->
+    <p>Klik gambar di bawah untuk akses ke google</p>
+    <a href="https://www.google.com/" target="_blank">
+        <img src="vbg dn.png" alt="vbg" width="700" height="350">
+    </a>
+
+    <h1>===================================</h1>
+    <h1>TABEL</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th bgcolor="#70CCC2">NAMA</th>
+                <th bgcolor="#70CCC2">NIM</th>
+                <th bgcolor="#70CCC2">KELAS</th>
+                <th bgcolor="#70CCC2">NILAI</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr> 
+                <td>Rifqi Muh</td>
+                <td>222313</td>
+                <td>1KS1</td>
+                <td>100</td>
+            </tr>
+            <tr> 
+                <td>Hasan Muj</td>
+                <td>222312</td>
+                <td>1KS2</td>
+                <!-- rowspan untuk menggabungkan baris -->
+                <td rowspan="2">90</td>
+            </tr>
+            <tr> 
+                <td>Ghina Amal</td>
+                <td>222311</td>
+                <td>1KS3</td>
+                <!-- <td>90</td> ditimpa rowspan-->
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <!-- colspan untuk menggabungkan jml kolom -->
+                <td colspan="3">Rata-Rata</td>
+                <td>95</td>
+            </tr>
+        </tfoot>
+    </table>
+    <br>
+
+    <h1>===================================</h1>
+    <h1>FORM</h1>
+    <form action=""> <!-- action berisi url tempat mengirim data -->
+        <label for="name">Nama : </label> <!-- Merujuk pada id input tertentu-->
+        <input type="text" id="name">
+        <br>
+
+        <label for="jk">Jenis Kelamin : </label>
+        <!-- Untuk memilih 1 buah opsi, diberikan name -->
+        <input type="radio" id="pria" name="jk" value="pria"><label for="pria">Pria</label>
+        <input type="radio" id="wanita" name="jk" value="wanita"><label for="wanita">Wanita</label>
+        <input type="radio" id="transgender" name="jk" value="transgender"><label for="transgender">Transgender</label>
+        <br>
+
+        <label for="hobi">Hobi : </label>
+        <input type="checkbox" id="menyanyi"><label for="menyanyi">Menyanyi</label>
+        <input type="checkbox" id="bola"><label for="bola">Bola</label>
+        <input type="checkbox" id="tidur"><label for="tidur">Tidur</label>
+        <br>
+
+        <select name="" id="">
+            <option value=""></option>
+            <option value=""></option>
+            <option value=""></option>
+        </select>
+        
+        <label for="tgllahir">Tanggal Lahir : </label>
+        <input type="date" id="tgllahir">
+        <br>
+
+        <label for="pass">Password : </label>
+        <input type="password" id="pass">
+        <br>
+
+        <label for="deskripsi">Deskripsi Diri : </label>
+        <textarea name="" id="deskripsi" cols="90" rows="5"></textarea>
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+    
+    <h1>===================================</h1>
+    <h1>IFRAME</h1>
+    <div style="display: flex; align-items: center;"> 
+    <!-- flex menjadikan item anaknya menjadi horizontal -->
+    <!-- align items center menjadikan semuanya middle secara horizontal -->
+        <div style="margin-right: 20px;">
+            Lokasi : 
+            <br>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.2465404744066!2d106.86490061744384!3d-6.231194499999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f375d8d2442d%3A0x4087ed65c373adce!2sPoliteknik%20Statistika%20STIS!5e0!3m2!1sen!2sid!4v1722735155296!5m2!1sen!2sid" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div>
+            Website Review : 
+            <br>
+            <iframe src="https://spmb.stis.ac.id/" frameborder="1" width="500" height="600"></iframe>
+        </div>
+    </div>
+    <br>
+
+    <h1>===================================</h1>
+    <h1>DIV & SPAN</h1>
+    <p>Keduanya memiliki fungsi sebagai pembungkus</p>
+    <p><b>DIV</b></p>
+    <div>
+        Memiliki Atribut Bawaan <i>display : block</i>
+    </div>
+    <div>
+        Yaitu display yang diambil adalah satu baris</i>
+    </div>
+    <p>
+        <b>SPAN</b>
+    </p>
+    <span>
+        Memiliki Atribut Bawaan <i>display : inner </i>
+    </span>
+    <span>
+        yaitu display yang diambil adalah satu tulisan saja
+    </span>
+    <br>
+
+    <h1>===================================</h1>
+    <h1>SEMANTIC HTML</h1>
+    <p>Desain semantic HTML berperan pada SEO</p>
+    <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--FAFBIS1F--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_800/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/n8f7yj3bjy7rcu03hfsa.png" alt="sematic web" height="400">
+
+</body>
+</html>
