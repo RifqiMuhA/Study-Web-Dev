@@ -1,0 +1,95 @@
+<!-- Dekripsi : Menyatukan form dan tabel -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form & Tabel</title>
+</head>
+<body>
+    <h1>Membuat Form Dalam Tabel</h1>
+    <form> <!-- action berisi url tempat mengirim data -->
+        <!-- 
+            cellspacing="0" -> Jarak antar cell
+            cellpadding="3" -> Jarak ke garis terluar cell
+            border="1" -> Ketebalan garis luat tabel
+        -->
+        <table border="2" cellspacing="0" cellpadding="3">
+            <tbody>
+                <tr>
+                    <td>
+                        <label for="name">Nama : </label> <!-- Merujuk pada id input tertentu-->
+                    </td>
+                    <td>
+                        <input type="text" id="name">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="jk">Jenis Kelamin : </label>
+                    </td>
+                    <td>
+                        <!-- Untuk memilih 1 buah opsi, diberikan name -->
+                        <input type="radio" id="pria" name="jk" value="pria"><label for="pria">Pria</label>
+                        <input type="radio" id="wanita" name="jk" value="wanita"><label for="wanita">Wanita</label>
+                        <input type="radio" id="transgender" name="jk" value="transgender"><label for="transgender">Transgender</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="hobi">Hobi : </label>
+                    </td>
+                    <td>
+                        <input type="checkbox" name="hobi" id="menyanyi" value="menyanyi"><label for="menyanyi">Menyanyi</label>
+                        <input type="checkbox" name="hobi" id="bola" value="bola"><label for="bola">Bola</label>
+                        <input type="checkbox" name="hobi" id="tidur" value="tidur"><label for="tidur">Tidur</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>   
+                        Kelas :
+                    </td>
+                    <td>
+                        <select name="kelas" id="kelas">
+                            <option value="1KS1" selected>1KS1</option>
+                            <option value="1KS2">1KS2</option>
+                            <option value="1KS3">1KS3</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="tgllahir">Tanggal Lahir : </label>
+                    </td>
+                    <td>
+                        <input type="date" id="tgllahir">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="pass">Password : </label>                       
+                    </td>
+                    <td>
+                        <input type="password" id="pass">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="deskripsi">Deskripsi Diri : </label>                        
+                    </td>
+                    <td>
+                        <textarea name="" id="deskripsi" cols="50"></textarea>
+                    </td>
+                </tr>
+                <!-- Menyelaraskan teks (dan elemen inline-block seperti tombol) di tengah secara horizontal. -->
+                <tr style="text-align: center;">
+                    <td colspan="2">
+                        <button type="submit">Submit</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+
+</body>
+</html>

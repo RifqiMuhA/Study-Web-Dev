@@ -1,0 +1,73 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    --maincolor : rgb(35,35,75);
+    --secondcolor : #d74c42;
+    --lightcolor : rgb(255, 239, 213);
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    background-color: var(--maincolor);
+    display: flex;
+    justify-content: space-around;
+    height: 50px;
+    align-items: center;
+}
+
+nav .logo {
+    color: var(--lightcolor);
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 40%;
+}
+
+nav ul li a {
+    text-decoration: none;
+    border-radius: 20px;
+    padding: 10px;
+    color: var(--lightcolor);
+}
+
+nav ul li a:hover {
+    color: var(--maincolor);
+    box-sizing: border-box;
+    background-color: var(--lightcolor);
+}
+
+/* Hamburger Menu */
+.menu-toogle {
+    display: flex;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+}
+
+.menu-toogle span {
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: var(--lightcolor);
+    border-radius: 3px;
+}
+
+/* responsive */
+@media screen and (max-width: 768px) {
+    nav ul {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    nav ul {
+        display: none;
+    }
+}

@@ -1,0 +1,194 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ddd;
+    line-height: 1.5; /* Memberikan jarak antara baris */
+    padding-bottom: 100px; /* Memberikan jarak bawah dari footer agar dapat discroll*/
+}
+
+/* Latihan 1 */
+.container-satu {
+    width: 800px; 
+    margin: 50px auto; /* Horizontal 50px, Vertikal auto center */
+    background-color: #fff;
+    padding: 20px;
+    box-sizing: border-box; /* Width and height includes the content, the padding as well as the border */
+    display: flex; /* Menampilkan item dalam container menyamping */
+    justify-content: space-between;
+}
+
+.kolom-utama {
+    order: 2;
+    flex: 2;
+    margin-right: 30px;
+}
+
+.sidebar-satu {
+    order: 1;
+    flex: 1;
+}
+
+.sidebar-dua {
+    order: 3;
+    flex: 1;
+}
+
+/* Latihan 2 */
+.container-dua {
+    max-width: 800px; /* Atur lebar container sesuai layar tapi max 800px*/
+    margin: 50px auto;
+}
+
+.layanan {
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.layanan.satu { background-color: rgb(144, 252, 144);}
+.layanan.dua { background-color: rgb(111, 111, 250);}
+.layanan.tiga { background-color: yellow;}
+
+.container-dua>.layanan>h3 {
+    text-align: center;
+    font-size: 36px; /* Atur ukuran font sesuai keinginan */
+    font-weight: bold;
+    background: linear-gradient(to right, rgb(255, 0, 0), rgb(255, 255, 255)); /* Gradasi dari biru ke putih */
+    background-clip: text; /* Latar belakang hanya akan terlihat di mana teksnya ada */
+    color: transparent; 
+}
+
+/* Latihan 3 */
+.container-tiga {
+    max-width: 800px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-tiga h3 {
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+    font-size: 36px;
+    background: white;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.container-galery {
+    max-width: 800px;
+    margin: 10px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.thumbnail {
+    width: 50%;
+}
+
+.thumbnail img {
+    width: 100%;
+}
+
+/* Latihan 4 */
+.container-empat {
+    max-width: 800px;
+    margin: 50px auto;
+    /* display: flex;
+    flex-wrap: wrap; */
+}
+
+.card {
+    background-color: white !important;
+    border: 1px solid black !important;
+    border-radius: 10px;
+    overflow: hidden; /* Menghilangkan elemen yang kelebihan dengan border */
+    margin: 10px 60px;
+    padding-bottom: 10px;
+    flex: 1;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: all 0.3s ease-in-out; 
+    /* width: 50%; */
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+.card .header {
+    height: 200px;
+    background-color: grey !important;
+}
+
+.card .header img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card .content {
+    margin: 0 5px;
+    text-align: center;
+}
+
+.card .content p {
+    height: 70px;
+}
+
+/* Latihan 5 */
+/* Margin: auto + Display: flex */
+.container-lima {
+    height: 500px;
+    width: 500px;
+    border: 5px solid black;
+    margin: 50px auto;
+    display: flex;
+    padding: 0;
+}
+
+.kotak {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    display: flex;
+    margin: auto;
+    text-align: center;
+}
+
+.kotak span {
+    margin: auto;
+}
+
+/* Responsive */
+@media( min-width: 800px ) {
+    .container-dua {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .layanan {
+        width: 30%;
+    }
+
+    .thumbnail {
+        width: 25%;
+    }
+
+    .container-empat {
+        display: flex;
+    }
+
+    .card {
+        width: 50%;
+        margin: 10px 10px;
+    }
+
+    .card.gede {
+        transform: scale(1.1);
+    }
+}

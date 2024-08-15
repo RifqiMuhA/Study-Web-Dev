@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .block {
+            display: block;
+            width: 100%;
+            background-color: lightblue;
+        }
+        
+        .inline {
+            display: inline;
+            background-color: lightcoral;
+            padding: 5px;
+        }
+        
+        .inline-block {
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            background-color: lightgreen;
+        }
+        
+        .flex {
+            display: flex;
+            justify-content: space-around;
+            background-color: lightgoldenrodyellow;
+            padding: 10px;
+        }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            background-color: lightgray;
+            padding: 10px;
+        }
+    </style>
+    <title>Contoh Display</title>
+</head>
+<body>
+    <div class="block">Block Element</div>
+    
+    <div>
+        <span class="inline">Inline Element 1</span>
+        <span class="inline">Inline Element 2</span>
+    </div>
+    
+    <div>
+        <div class="inline-block">Inline-Block 1</div>
+        <div class="inline-block">Inline-Block 2</div>
+    </div>
+    
+    <div class="flex">
+        <div>Flex Item 1</div>
+        <div>Flex Item 2</div>
+        <div>Flex Item 3</div>
+    </div>
+    
+    <div class="grid">
+        <div>Grid Item 1</div>
+        <div>Grid Item 2</div>
+        <div>Grid Item 3</div>
+        <div>Grid Item 4</div>
+    </div>
+</body>
+</html>
