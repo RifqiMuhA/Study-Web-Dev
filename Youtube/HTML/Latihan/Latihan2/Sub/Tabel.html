@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabel</title>
+    <style>
+        ul li{
+            margin-right: 20px;
+        }
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <title>Tabel Buku</title>
+    </header>
+
+    <nav>
+        <div style="display: flex; align-items: center; justify-content: space-between; width: 100%; height: 100px; background-color: rgb(255, 251, 0);">
+            <img src="../Src/logo.png" alt="Logo BPS" width="100px" style="position: absolute; margin-left: 20px;">
+            <h1 style="flex: 1; text-align: center; margin: 0;">PERPUSTAKAAN SEDERHANA</h1>
+        </div>
+        
+        <h2>Halaman</h2>
+        <ul style="display: flex;" type="none">
+            <li><a href="../Home.html">Home</a></li>
+            <li><a href="Question.html">Question</a></li>
+            <li><a href="Tabel.html">Tabel</a></li>
+        </ul>
+        <hr>
+    </nav>
+
+    <main>
+        <h2>Daftar Buku</h2>
+        <table border="1" cellspacing="0" cellpadding="3">
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Cover</th>
+                    <th>Judul</th>
+                    <th>Penulis</th>
+                    <th>Deskripsi</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td><img src="../Src/hujan.jpeg" alt="kucing" style="max-width: 150px;"></td>
+                    <td>Hujan</td>
+                    <td>Tere Liye</td>
+                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Minima ut mollitia nesciunt corporis velit dignissimos.</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td><img src="../Src/pergi.jpeg" alt="pergi novel"></td>
+                    <td>Pergi</td>
+                    <td>Fuad</td>
+                    <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                        Blanditiis, fugit?</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td><img src="../Src/teros.jpeg" alt="teros batozar"></td>
+                    <td>Teros</td>
+                    <td>Rick Riordan</td>
+                    <td>Lorem ipsum dolor sit amet.</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menampilkan Video dan Suara</title>
+</head>
+<body>
+    <h1>Menampilkan Video dan Suara</h1>
+    <hr>
+    <!-- Local Vid -->
+    <div style="display: flex; justify-content: center;">
+         <video 
+             src="Source/M3GAN.mp4"
+             poster="Source/miaw.jpeg"
+             width="50%"
+             controls
+             preload="metadata"
+             >
+             <!-- 
+                autoplay -> langsung diputar
+                preload="none" -> load awal tidak ada sebelum diklik
+                preload="auto" -> load semua video langsung sebelum diklik
+                preload="metadata" -> load metadata saja sebelum diklik
+            -->
+             <p>Video Gore</p>
+        </video>
+    </div>
+    <div style="display: flex; justify-content: center;">
+        <audio 
+            src="Source/musik.m4a"
+            controls
+            preload="metadata"
+            loop
+        >
+        <!-- 
+            autoplay -> langsung diputar
+        -->
+        </audio>
+    </div>
+</body>
+</html>

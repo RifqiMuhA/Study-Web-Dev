@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question</title>
+    <style>
+        ul li{
+            margin-right: 20px;
+        }
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <title>Question</title>
+    </header>
+
+    <nav>
+        <div style="display: flex; align-items: center; justify-content: space-between; width: 100%; height: 100px; background-color: rgb(255, 251, 0);">
+            <img src="../Src/logo.png" alt="Logo BPS" width="100px" style="position: absolute; margin-left: 20px;">
+            <h1 style="flex: 1; text-align: center; margin: 0;">PERPUSTAKAAN SEDERHANA</h1>
+        </div>
+
+        <h2>Halaman</h2>
+        <ul style="display: flex;" type="none">
+            <li><a href="../Home.html">Home</a></li>
+            <li><a href="Question.html">Question</a></li>
+            <li><a href="Tabel.html">Tabel</a></li>
+        </ul>
+        <hr>
+    </nav>
+
+    <main>
+        <h2>Question</h2>
+        <div style="display: flex; justify-content: center;">
+        <!-- 
+            ---Dalam Flex---
+            justify-content -> secara horizontal
+            align-items -> secara vertical 
+        -->
+            <table border="1" cellpadding="2">
+                <thead>
+                    <tr>
+                        <th colspan="2" style="text-align: center; background-color: rgb(255, 251, 0);" >
+                            <b>FORM PERTANYAAN</b>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><label for="nama">Nama Lengkap : </label></td>
+                        <td><input type="text" id="nama"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="jk">Jenis Kelamin : </label></td>
+                        <td>
+                            <input type="radio" id="pria" name="jk"><label for="pria">Pria</label>
+                            <input type="radio" id="wanita" name="jk"><label for="wanita">Wanita</label>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="notelp">No Telp : </label></td>
+                        <td><input type="number" id="notelp" placeholder="08xxxxxxxx"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="question">Pertanyaan : </label></td>
+                        <td><textarea name="question" id="question" placeholder="tulis pertanyaanmu" cols="50" rows="3"></textarea></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+</body>
+</html>

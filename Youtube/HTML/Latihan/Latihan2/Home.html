@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perpustakaan Sederhana</title>
+    <style>
+        ul li{
+            margin-right: 20px;
+        }
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .container {
+            display: flex; 
+            align-items: center; 
+            justify-content: space-between; 
+            width: 100%; height: 100px; 
+            background-color: rgb(255, 251, 0);
+        }
+        .judul {
+            flex: 1; 
+            text-align: center; 
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <title>Perpustakaan Sederhana</title>
+    </header>
+
+    <nav>
+        <div class="container">
+            <img src="Src/logo.png" alt="Logo BPS" width="100px" style="position: absolute; margin-left: 20px;">
+            <h1 class="judul">PERPUSTAKAAN SEDERHANA</h1>
+        </div>
+
+        
+
+        <h2>Halaman</h2>
+        <ul style="display: flex;" type="none">
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="Sub/Question.html">Question</a></li>
+            <li><a href="Sub/Tabel.html">Tabel</a></li>
+        </ul>
+        <hr>
+    </nav>
+
+    <main>
+        <h2>Home</h2>
+        <h2 style="text-align: center;">Selamat Datang Di Perpustakaan!</h2>
+        <p align="justify"><b>Lorem ipsum</b> dolor sit amet consectetur adipisicing elit. 
+            Iure rerum consectetur nulla dolore error repudiandae facilis ducimus 
+            itaque doloribus at esse magnam sapiente debitis sed ipsam nobis, quos 
+            sunt inventore.</p>
+        <p align="justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Ullam ea harum nam ducimus, sed non nemo ipsa, quas hic numquam sequi quisquam 
+            odio nesciunt architecto consequatur laudantium ratione necessitatibus a autem aliquam 
+            modi possimus similique accusamus eligendi. Expedita, rerum distinctio!</p>
+        <blockquote>
+            <q><i>Membaca adalah jembatan ilmu</i></q>- Albert Einstein
+        </blockquote>
+
+            
+    </main>
+</body>
+</html>

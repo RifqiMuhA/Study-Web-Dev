@@ -1,0 +1,26 @@
+.container div {
+    /* width: 90px; 
+    height: 90px; 
+    background-color: green; 
+    border: 2px solid black; 
+    margin: 5px;  */
+    flex: 1; 
+    cursor: pointer;
+}
+
+.container div.satu {
+    
+}
+
+.container div.satu:hover {
+    flex: 3;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    align-content: stretch;
+    justify-content: center;
+    height: 100vh; /* Memastikan container mengisi tinggi viewport */
+    border: 2px solid black; /* Untuk melihat batas container */
+}

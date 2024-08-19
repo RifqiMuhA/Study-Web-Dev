@@ -1,0 +1,23 @@
+.container {
+    width: 600px;
+    border: 1px solid black;
+    margin: auto;   
+    padding: 5px;
+}
+
+.inner {
+    width: 100px;
+    height: 100px;
+}
+
+.satu {
+    background-color: red;
+}
+.dua {
+    background-color: green;
+    float: right;
+    /* float: left; */
+}
+.tiga {
+    background-color: blue;
+}
